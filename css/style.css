@@ -2,33 +2,117 @@
 
 body{
     padding: 0;
-    margin: 20px;
+    margin: 0px;
+    font-family: oswald, arial;
+}
+.container{
+    font-family: oswald, arial;
+    margin: 0px;
 }
 
 .logo{
-    color: brown;
-}
-
-nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-nav > li  {
-    list-style-type: none;
-    padding: 20px;
-    font-size: 20px; 
+    color: rgb(53, 70, 107);
+    padding-left: 20px;
+    padding-top: 5px;
+    font-size: 16px;
     
 }
-nav > li > a{
-    text-decoration: none;
-    color: black;
+.header{
+    background-image: url('cleanSpce.jpg');
+    background-size: cover; 
+    background-position: 0 -1030px;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+}
+nav {
+    text-align: center;  
+}
+nav li  {
+    list-style-type: none;
+    padding-right: 20px;
+    padding-bottom: 3px;
+    font-size: 18px; 
+    display: inline-block;   
+    font-weight: bold;
    
 }
-nav > li > a :hover{
-    border-bottom: 3px solid brown;
+nav a{
+    text-decoration: none;
+    color: rgb(9, 10, 80);
+    padding: 2px;  
 }
-.content{
-    border: 3px;
+nav a:hover{
+    border-bottom: 2px solid;
+}
+.home-content{
+    height: 200px;
+    background-image: url('cleanSpce.jpg');
+    background-size: cover; 
+    background-position: 0 -1155px;
+    background-repeat: no-repeat;
+    height: 500px;
+    padding-top: 30px;
+    text-align: center;
+    justify-content: center;
+}
+.home-content h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+.home-content p{
+    text-align: center;
+    justify-content: center;
+}
+.about{
+    margin: 0;
+    line-height: 25px;
+    text-align: center;
+    background-color: rgba(119, 117, 117, 0.527);
+    height: 300px;
+    padding: 5px;
+    font-family: oswald, arial;
+}
+.services{
+    
+    margin: 0;
+    padding: 5px;
+    align-items: center;
+    background-color: rgba(119, 117, 117, 0.527);   
+}
+.services h2{
+    padding-top: 1px;
+    text-align: center;
+}
+.services-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3em;
+    align-items: center;
+    background-color: rgba(117, 114, 156, 0.856);
+    border-radius: 50px;
+    border: 5px solid transparent;
+    /* transition: 0.4s ease-in-out; */
+    width: 350px;
+    margin-inline-start: 2px;
+    height: 400px;
+    
+}
+.boxes{
+    display: flex;  
+    gap: 4em;
+}
+span{
+    font-weight: bold;
+    color: rgb(9, 10, 80); 
+}
+.price{
+    padding: 10px;
+    width: 100px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+}
+.price:hover{
+    background-color: rgba(50, 56, 114, 0.897);
 }
