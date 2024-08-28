@@ -58,14 +58,14 @@
                 <div class="services-box">
                     
                      
-                        <b>Technical Skills</b>   
+                        <b>General Cleaning</b>   
                         <button type="button" class="price">43$</button>
                        
                     
                 </div>
 
                 <div class="services-box">
-                    <b>Technical Skills</b>   
+                    <b>Deep Cleaning</b>   
                     <button type="button" class="price">43$</button>
                    
                     
@@ -73,14 +73,14 @@
 
                 <div class="services-box">
                     
-                    <b>Technical Skills</b>   
+                    <b>Move-In/Move-Out Cleaning</b>   
                     <button type="button" class="price">43$</button>
                    
                 </div>
 
                 <div class="services-box">
                    
-                    <b>Technical Skills</b>   
+                    <b>Specialized Cleaning</b>   
                     <button type="button" class="price">43$</button>
                    
                     
@@ -88,77 +88,113 @@
 
                 <div class="services-box">
                    
-                    <b>Technical Skills</b>   
+                    <b>Disinfection Cleaning</b>   
                     <button type="button" class="price">43$</button>
                    
                     
                 </div>
             </div>
             </section>
-<hr>
-            <section id="contact">
+            
+            <section id="contact" class="contact-section">
+                <h2><span>Contact Us</span></h2>
 
-                <form  method="post" name="message-form" onsubmit="return (validateForm())"> 
-                    <table>
-                        <tr>
-                            <td>
-                                <label for="nama">Nama</label>
-                            </td>
-                            <td>
-                                : <input type="text" placeholder="Nama" name="full-name">
-                            </td>
-                        </tr>
-                        <tr>
-                           <td>
-                            Tanggal Lahir
-                           </td>
-                           <td>
-                            : <input type="date" name="birth-date">
-                           </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Jenis Kelamin
-                            </td>
-                            <td>
-                                : <input type="radio" id="male" name="gender" value="male">
-                                <label for="male">Laki-Laki</label>
+                <div class="contact-content">
+                    <div>
+                        <form  method="post" name="message-form"> 
+                            <table>
+                                <tr>
+                                    <td>
+                                        <label for="nama">Nama</label>
+                                    </td>
+                                    <td>
+                                        : <input type="text"  id="nama" name="full-name">
+                                    </td>
+                                </tr>
+                                <tr>
+                                <td>
+                                    <label for="tgl-lahir">Tanggal Lahir</label>
+                                </td>
+                                <td>
+                                    : <input type="date" id="tgl-lahir"  name="birth-date">
+                                </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Jenis Kelamin
+                                    </td>
+                                    <td>
+                                        : <input type="radio" id="sender-gender" name="gender" value="Laki-Laki">
+                                        <label for="sender-gender" >Laki-Laki</label>
 
-                                <input type="radio" id="female" name="gender" value="female">
-                             <label for="female">Perempuan</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Pesan    
-                            </td>
-                            <td>
-                                : <textarea name="message"></textarea>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="submit" value="submit">
-                            </td>
-                        </tr>
-                </table>
-                </form> 
-                
+                                        <input type="radio" id="sender-gender" name="gender" value="Perempuan">
+                                    <label for="sender-gender" >Perempuan</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="pesan">Pesan</label>    
+                                    </td>
+                                    <td>
+                                        : <textarea name="message" id="pesan"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button type="button" onclick="validateForm()">Kirim</button>
+                                    </td>
+                                </tr>
+                        </table>
+                        </form> 
+                    </div>
 
-                <div onsubmit="return (setSenderUi())">
-                    <p>Nama: <span id="sender-full-name"></span></p>
-                    <p>Tanggal Lahir:<span id="sender-birth-date"></span></p>
-                    <p>Jenis Kelamin:<span id="sender-gender"></span></p>
-                    <p>Pesan:<span id="sender-messages"></span></p>
+                    <div >
+                        <p>Nama: <span id="hasil-nama"></span></p>
+                        <p>Tanggal Lahir:<span id="hasil-tgl-lahir"></span></p>
+                        <p>Jenis Kelamin:<span id="hasil-gender"></span></p>
+                        <p>Pesan:<span id="hasil-pesan"></span></p>
+                    </div>
                 </div>
             </section>
         </main>
         
-        <hr>
+
 
         <!-- footer -->
         <footer>
-
+            <div class="social-icons">
+                <a href="#">
+                        <i class="bi bi-linkedin" id="social-icons"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-github" id="social-icons"></i>
+                    </a>
+                    <a href="https://www.instagram.com/afraaaanh_?igsh=MTJ1MjBpOTd5cmRidg==">
+                        <i class="bi bi-instagram" id="social-icons"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-twitter-x" id="social-icons"></i>
+                    </a>
+            </div>
+    
+            <ul class="list">
+                <li>
+                    <a href="#">FAQ</a>
+                </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+    
+            <p class="copyright">
+               &COPY;Afra Nafilatul | All Rights Reserved
+            </p>
         </footer>
     </div>
     <script src="js\script.js"></script>
