@@ -182,13 +182,14 @@ footer .copyright{
         flex-direction: column;
     }
 }
-@media(min-width: 218px) and (max-width: 400px;){
+@media(min-width: 218px) and (max-width: 400px){
     nav{
         display: flex;
         flex-direction: column;
     }
 
 }
+
 @media(min-width: 218px) and (max-width: 800px){
     body{
         background-color: rgba(119, 117, 117, 0.527); 

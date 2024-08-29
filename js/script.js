@@ -1,5 +1,12 @@
 // ini javascript
 
+function replaceName(){
+    let name = prompt("Siapa namamu?")
+    document.getElementById("welcome-speech").innerHTML = name;
+}
+
+replaceName();
+
 function validateForm(){
     let name = document.getElementById("nama").value;
     let birthDate = document.getElementById("tgl-lahir").value;
