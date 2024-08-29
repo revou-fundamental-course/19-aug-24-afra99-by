@@ -17,7 +17,7 @@ body{
     
 }
 .header{
-    background-image: url('cleanSpce.jpg');
+    background-image: url('../image/cleanSpce.jpg');
     background-size: cover; 
     background-position: 0 -1030px;
     background-repeat: no-repeat;
@@ -46,7 +46,7 @@ nav a:hover{
 }
 .home-content{
     height: 200px;
-    background-image: url('cleanSpce.jpg');
+    background-image: url('../image/cleanSpce.jpg');
     background-size: cover; 
     background-position: 0 -1155px;
     background-repeat: no-repeat;
